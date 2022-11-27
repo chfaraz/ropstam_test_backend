@@ -13,7 +13,7 @@ import { ConfigService } from '@nestjs/config';
           host: 'smtp.sendgrid.net',
           port: 25,
           auth: {
-            user: 'apikey',
+            user: process.env.SEND_GRID_KEY,
             pass: process.env.SEND_GRID_PASS
           }
         },
